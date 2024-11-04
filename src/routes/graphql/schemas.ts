@@ -1,7 +1,7 @@
 import { Type } from '@fastify/type-provider-typebox';
 import { PrismaClient } from '@prisma/client';
 import { GraphQLSchema } from 'graphql';
-import { mutation, query } from './userScheme.js';
+import { mutation, query } from './query.js';
 
 export const gqlResponseSchema = Type.Partial(
   Type.Object({
