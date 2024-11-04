@@ -1,7 +1,7 @@
 import { GraphQLScalarType, Kind } from 'graphql';
 import { MemberTypeId as MemberTypeIdEnum } from '../../member-types/schemas.js';
 
-// Function to check if the value is a valid MemberTypeId
+
 const isMemberTypeId = (value: unknown): value is MemberTypeIdEnum =>
   Object.values(MemberTypeIdEnum).includes(value as MemberTypeIdEnum);
 
